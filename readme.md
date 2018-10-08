@@ -27,7 +27,7 @@ Run:
     $zohoCreatorClient = new ZohoCreatorClient($apiToken);
 
     // Get a list of available Applications
-    $creatorapplications = $zohoCreatorClient->applications();
+    $creatorapplications = $zohoCreatorClient->getApplications();
 
     // Get a specific Application instance
     $creatorapplication = $zohoCreatorClient->application($applicationName);
