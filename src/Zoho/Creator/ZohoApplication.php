@@ -26,8 +26,8 @@ class ZohoApplication {
 	/**
      * @see https://www.zoho.eu/creator/help/api/rest-api/rest-api-view-records-in-view.html
      */
-    public function getRecords($viewName) {
-        return $this->call("view/{$viewName}", array('raw' => 'true'));
+    public function getRecords($viewName, $criteria) {
+        return $this->call("view/{$viewName}", array('raw' => 'true', 'criteria' => $criteria));
     }
 
 	/**
